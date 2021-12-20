@@ -17,12 +17,9 @@ public class yokaiCards {
         } else if (this.Type == 2) {
             return ("Oni");
         } else if (this.Type == 3) {
-            return ("N");
-        } else if (this.Type == 4) {
-            return ("R");
-        } else if (this.Type == 5) {
-            return ("P");
+            return ("Rokurokubi");
         } else {
             return (" ");
         }
+    }
 }
