@@ -22,8 +22,31 @@ public class Yokai {
             */
         }
     }
-
     public void createPlayers(){
+
+            int nbplayers;
+            System.out.println("Combien de joueurs y aura t-il ?");
+            nbplayers = scan.nextInt();
+    
+            if (nbplayers <= 4 + nbplayers >= 2){
+    
+                for (int i = 0 ; i < nbplayers ; i++){
+    
+                    System.out.println("Joueur numéro " + i);
+                    System.out.println("Comment vous appelez vous ?");
+                    Player player = new Player.Builder(i).name(scanner.nextLine()).build() ;
+                }
+            
+               
+            } else {
+                System.out.println("Nombre de joueurs invalides")
+            }
+        }
+    
+    
+    
+    
+   /* public void createPlayersVersion1(){
         Scanner scanner = new Scanner(System.in);
 
         int nbplayers;
@@ -57,6 +80,7 @@ public class Yokai {
             System.out.println("nombre de joueur invalide");
 
         }
+        */
 
 
        
